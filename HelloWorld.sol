@@ -1,14 +1,15 @@
-pragma solidity ^0.5.10;
+pragma solidity ^0.4.19;
 
 contract HelloWorld {
-  string myName = "Tristan";
-
-  // Add this function:
-  function getMyName() public view returns(string memory) {
-    return myName;
+  // State Variables
+  string greeting = "";
+  
+  function greet() public constant returns (string) {
+    return greeting;
   }
 
-  function changeMyName(string memory _newName) public {
-    myName = _newName;
+  function setGreeting(string newGreeting) public {
+    greeting = newGreeting;
   }
+
 }
