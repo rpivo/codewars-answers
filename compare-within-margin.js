@@ -9,4 +9,4 @@ a = -3;
 b = 5;
 margin = 3;
 
-console.log(close_compare(a, b, margin));
+console.log(closeCompare(a, b, margin));
