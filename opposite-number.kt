@@ -1,0 +1,1 @@
+fun opposite(number: Int) = number * -1
